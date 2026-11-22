@@ -58,6 +58,15 @@ AIOS C:\> _
 (`OVMF_VARS.fd` is a copy of `edk2-i386-vars.fd` from the QEMU `share` folder.)
 It also boots on real UEFI machines from a FAT32 USB stick with the same `EFI\BOOT\BOOTX64.EFI` layout.
 
+### Running on real hardware (UEFI-only)
+
+1. Format a USB stick as **FAT32** (in Windows: right-click the drive → Format → FAT32).
+2. Create the folder `EFI\BOOT` on the stick and copy `AIOS.efi` into it, renamed to `BOOTX64.EFI`.
+3. Turn off **Secure Boot** and **CSM / Legacy Boot** in your firmware settings.
+4. Boot from the USB stick (usually F12, F9, or Esc at startup).
+
+Machines with only legacy BIOS will not boot this build.
+
 ## Building from source (Windows)
 
 You need: **Visual Studio Build Tools** (C++ workload), **Git**, **Python 3**, **NASM**, and a checkout of **EDK II**.
