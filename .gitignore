@@ -1,0 +1,53 @@
+# ---- Build output ----
+build/
+Build/
+Conf/.cache/
+*.efi
+*.dll
+*.obj
+*.lib
+*.map
+*.pdb
+*.o
+*.elf
+*.tmp
+*.log
+
+# ---- Disk images, firmware and VM files (publish these as GitHub Releases instead) ----
+*.iso
+*.img
+*.vhd
+*.vhdx
+*.vmdk
+*.qcow2
+*.raw
+*.fd
+*.bin
+*.tar
+
+# ---- Folders next to the source that are NOT source ----
+edk2/
+USB/
+ISO/
+EFI/
+limine/
+limine-binary/
+limine7/
+kernel/limine/
+kernel/build/
+kernel/mnt/
+
+# ---- Never commit proprietary software ----
+dos.img
+msdos*/
+MSDOS*/
+word*/
+WORD*/
+
+# ---- Editors / OS junk ----
+.vs/
+.vscode/
+*.user
+Thumbs.db
+desktop.ini
+.DS_Store
