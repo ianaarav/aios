@@ -13,6 +13,8 @@ Type HELP to see available commands. Press Tab to complete.
 AIOS C:\> _
 ```
 
+> **Note:** AIOS currently runs only on UEFI-only machines (no legacy BIOS/CSM). Legacy-BIOS support is planned for later.
+
 > **Status:** hobby project, actively developed. It runs on UEFI firmware (tested in QEMU/OVMF).
 > Not a replacement for a real OS — see [Limitations](#limitations).
 
