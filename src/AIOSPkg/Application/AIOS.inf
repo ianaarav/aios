@@ -1,0 +1,40 @@
+[Defines]
+  INF_VERSION    = 0x00010005
+  BASE_NAME      = AIOS
+  FILE_GUID      = 2F8A4A4D-3E7D-4C2D-9E91-8D3B7A6C5F20
+  MODULE_TYPE    = UEFI_APPLICATION
+  VERSION_STRING = 0.70
+  ENTRY_POINT    = UefiMain
+
+[Sources]
+  main.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+
+[LibraryClasses]
+  UefiApplicationEntryPoint
+  UefiLib
+  BaseLib
+  BaseMemoryLib
+  DevicePathLib
+  PrintLib
+  UefiBootServicesTableLib
+  UefiRuntimeServicesTableLib
+
+[Protocols]
+  gEfiLoadedImageProtocolGuid
+  gEfiSimpleFileSystemProtocolGuid
+  gEfiBlockIoProtocolGuid
+  gEfiGraphicsOutputProtocolGuid
+  gEfiSimplePointerProtocolGuid
+  gEfiAbsolutePointerProtocolGuid
+  gEfiCpuIo2ProtocolGuid
+  gEfiSimpleTextInputExProtocolGuid
+
+[Guids]
+  gEfiFileInfoGuid
+  gEfiFileSystemInfoGuid
+
+[BuildOptions]
+  MSFT:*_*_*_CC_FLAGS = /GL-

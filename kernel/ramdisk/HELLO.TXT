@@ -1,0 +1,2 @@
+Hello from the AIOS RAM disk!
+This file lives inside the kernel image.
